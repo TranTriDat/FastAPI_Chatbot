@@ -1,0 +1,26 @@
+# Create a virtual environment
+python -m venv venv
+# Active the virtual environment (Windows)
+.\venv\Scripts\activate.bat
+
+
+#To run
+fastapi dev main.py
+#OR
+uvicorn main:app --reload
+
+
+-------------------------------------------------------------------------------
+
+### Microsoft dev tunnel
+winget install Microsoft.devtunnel
+## Upgrade
+
+### Login
+devtunnel user login
+
+### Host
+# Start a http server on port 8000
+devtunnel echo http -p 8000
+# Tunnel port 8000
+devtunnel host -p 8000
